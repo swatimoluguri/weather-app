@@ -4,6 +4,7 @@ import Weather from './components/weather/Weather';
 import Forecast from './components/forecast/forecast';
 import { WEATHER_API_URL, FORECAST_API_URL, WEATHER_API_KEY } from './components/api';
 import { useState } from 'react';
+import Logo from './logo.png';
 
 function App() {
   const [weather, setWeather] = useState(null);
@@ -24,6 +25,7 @@ function App() {
   }
   return (
     <div className="container">
+      <img src={Logo} alt="logo" />
       <Search onSearchChange={handleOnsearchChange} />
       {weather && <Weather data={weather} />}
       {forecast && <Forecast data={forecast} />}
