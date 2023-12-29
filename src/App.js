@@ -13,13 +13,12 @@ function App() {
     const [lat, lon] = searchData.value.split(" ");
     const currentWeatherFetch = fetch(`${WEATHER_API_URL}/?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`);
     const forecastFetch = fetch(`${FORECAST_API_URL
-      }/?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}`);
+      }/?lat=${lat}&lon=${lon}&appid=${WEATHER_API_KEY}&units=metric`);
     Promise.all([currentWeatherFetch, forecastFetch]).then(async (response) => {
       const weatherResponse = await response[0].json();
       const forecastResponse = await response[1].json();
       setWeather({ city: searchData.label, ...weatherResponse });
       setForecast({ city: searchData.label, ...forecastResponse });
-      console.log(forecastResponse);
     })
       .catch((err) => console.log(err));
   }

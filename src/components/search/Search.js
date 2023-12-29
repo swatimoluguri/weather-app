@@ -9,7 +9,7 @@ const Search = ({ onSearchChange }) => {
         onSearchChange(searchData);
     }
     const loadOptions = (inputValue) => {
-        return fetch(`${GEO_API_URL}?namePrefix=${inputValue}`,geoAPIOptions)
+        return fetch(`${GEO_API_URL}?countryIds=IN&sort=-population&namePrefix=${inputValue}`,geoAPIOptions)
         .then((response)=>response.json())
         .then((response)=>{
             return {
