@@ -13,7 +13,7 @@ const Forecast = ({ data }) => {
     return (
         <>
         <h2>Next 7 Days</h2>
-            {data.list.splice(0, 7).map((item, idx) => (
+            {data.list.slice(0, 7).map((item, idx) => (
                 <Accordion className="accordion" key={idx}>
                     <AccordionSummary
                         expandIcon={<ExpandMoreIcon className="expand-more-icon" />}
@@ -21,7 +21,7 @@ const Forecast = ({ data }) => {
                         id="panel1a-header"
                     ><div><img alt="forecast" className="forecast-icon" src={`icons/${item.weather[0].icon}.png`} /></div>
                         <Typography className="weekday">
-                            <div className='weekday-label'>{forecastDays[idx]}</div>
+                            <div className='weekday-label'>{forecastDays[idx]} -  {item.dt_txt}</div>
                             <div className='weekday-description'>{item.weather[0].description}</div>
                             <div className='weekday-min-max-temp'>{Math.round(item.main.temp_max)}°C / {Math.round(item.main.temp_min)}°C </div>
                         </Typography>

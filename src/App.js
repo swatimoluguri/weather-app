@@ -20,6 +20,19 @@ function App() {
       const forecastResponse = await response[1].json();
       setWeather({ city: searchData.label, ...weatherResponse });
       setForecast({ city: searchData.label, ...forecastResponse });
+      let forecastDates = JSON.parse(JSON.stringify(forecastResponse));
+      const weatherArrayByDate = Object.values(forecastDates.list).reduce((result, details) => {
+        const date = details.dt_txt.split(' ')[0];
+        if (!result[date]) {
+          result[date] = [];
+        }
+        result[date].push(details.main.temp);
+        return result;
+      }, {});
+      Object.keys(weatherArrayByDate).forEach(date => {
+        weatherArrayByDate[date] = { min: Math.min(...weatherArrayByDate[date]), max:Math.max(...weatherArrayByDate[date])};
+      });
+      console.log(weatherArrayByDate);
     })
       .catch((err) => console.log(err));
   }
