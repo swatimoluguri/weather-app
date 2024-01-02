@@ -17,17 +17,23 @@
     align-items: center;
 }
 .expand-more-icon{
-
     color:#e9d24e;
 }
 .weekday div{
     font-family:'Poppins', sans-serif;
     margin-left: 10%;
-    width: 30%;
+    width: 25%;
 }
 .weekday-label{
     color: #e9d24e;
+    font-size: 15px;
+    line-height: 1;
+    font-weight: 200;
+}
+.weekday-date{
+    color: white;
     font-size: 20px;
+    line-height: 1;
     font-weight: 800;
 }
 .weekday-min-max-temp{
@@ -37,5 +43,5 @@
 }
 .weekday-description{
     color:#afc4eb;
-    font-size: 18px;
+    font-size: 20px;
 }

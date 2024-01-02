@@ -1,8 +1,28 @@
-.container{
+.container {
   max-width: 1080px;
-  margin: 20px auto;
+  margin: 20px auto 100px auto;
 }
-img{
-  width:50%;
-  margin:10px 10px;
+
+img {
+  width: 50%;
+  margin: 10px 10px;
+}
+
+footer {
+  top: 10px;
+  right:15px;
+  position: fixed;
+  display: flex;
+  height: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  display: inline;
+}
+
+footer img {
+  height: 100%;
+  width: auto;
 }
