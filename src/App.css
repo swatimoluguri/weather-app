@@ -1,21 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 .container {
-  max-width: 1080px;
-  margin: 20px auto 100px auto;
+  max-width: 120vh;
+  margin: 2vh auto 10vh auto;
 }
 
 .logo {
   width: 50%;
-  margin: 10px 10px;
+  margin: 1vh 1vh;
 }
 
 footer {
-  bottom: 10px;
-  left: 15px;
-  margin: 50px;
+  bottom: 1vh;
+  left: 1.5vh;
+  margin: 5vh;
   display: flex;
-  height: 20px;
+  height: 2vh;
   justify-content: center;
   align-items: center;
 }
@@ -33,10 +33,10 @@ footer img {
   background-image: linear-gradient(to bottom, #2B4068, #3876AD);
   ;
   color: white;
-  width: 500px;
-  margin: 20px auto;
+  width: 50vh;
+  margin: 2vh auto;
   border-radius: 10px;
-  box-shadow: 10px -2px 20px 2px rgba(80, 79, 79, 0.3);
+  box-shadow: 1vh -0.5vh 2vh 0.5vh rgba(80, 79, 79, 0.3);
   padding: 10px;
 }
 
@@ -44,38 +44,38 @@ footer img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 0px 10px 10px 120px;
+  margin: 0vh 1vh 1vh 12vh;
 }
 
 .city {
-  font-size: 20px;
+  font-size: 2vh;
   font-weight: 700;
   line-height: 2;
-  margin: 0px 5px;
+  margin: 0vh 0.5vh;
   color: #e9d24e;
 }
 
 .weather-description {
-  font-size: 15px;
+  font-size: 1.5vh;
   font-weight: 500;
   line-height: 1;
   margin: 0;
 }
 
 .weather-icon {
-  width: 150px;
+  width: 15vh;
   ;
 }
 
 .temperature {
-  font-size: 50px;
+  font-size: 5vh;
   font-weight: 800;
 }
 
 .parameter-row {
   display: flex;
   justify-content: space-between;
-  gap: 20px;
+  gap: 2vh;
   align-items: center;
 }
 
@@ -84,41 +84,41 @@ footer img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 10px 70px;
+  margin: 1vh 7vh;
 }
 
 
 .parameter-label {
   text-align: left;
   font-weight: 200;
-  font-size: 15px;
+  font-size: 1.5vh;
   color: #afc4eb;
 }
 
 .parameter-value {
   text-align: right;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 2vh;
   color: #afc4eb;
 }
 
 hr {
-  border: 1px solid #e9d24e;
-  margin: 20px;
+  border: 0.2vh solid #e9d24e;
+  margin: 2vh;
 }
 
 .accordion {
   font-family: 'Poppins', sans-serif;
   background-image: linear-gradient(to bottom, #2B4068, #3876AD);
   ;
-  margin: 5px auto;
-  border-radius: 10px;
-  box-shadow: 10px -2px 20px 2px rgba(80, 79, 79, 0.3);
+  margin: 0.5vh auto;
+  border-radius: 1vh;
+  box-shadow: 1vh -0.5vh 2vh 0.5vh rgba(80, 79, 79, 0.3);
 }
 
 .forecast-icon {
   margin-left: 10%;
-  width: 60px;
+  width: 6vh;
 }
 
 .weekday {
@@ -141,71 +141,72 @@ hr {
 
 .weekday-label {
   color: #e9d24e;
-  font-size: 15px;
+  font-size: 1.5vh;
   line-height: 1;
   font-weight: 200;
 }
 
 .weekday-date {
   color: white;
-  font-size: 20px;
+  font-size: 2vh;
   line-height: 1;
   font-weight: 800;
 }
 
 .weekday-min-max-temp {
   color: white;
-  font-size: 25px;
+  font-size: 2.5vh;
   font-weight: 800;
 }
 
 .weekday-description {
   color: #afc4eb;
-  font-size: 20px;
+  font-size: 2vh;
 }
 
 
 
 @media screen and (max-width:1100px) {
   .container {
-    margin: 20px 20px 80px 20px;
+    margin: 2vh 2vh 8vh 2vh;
   }
 
   .logo {
-    width: 70%;
+    width: 100%;
+    margin:1vh auto;
   }
 
   p {
-    font-size: 12px;
+    font-size: 1.2vh;
   }
 
   .city {
-    font-size: 18px;
+    font-size: 2vh;
     font-weight: 600;
-    margin: 0px 10px;
+    margin: 0vh 1vh;
   }
 
   .weather-icon {
-    width: 100px;
+    width: 10vh;
   }
 
   .temperature {
-    font-size: 35px;
+    font-size: 4vh;
     font-weight: 600;
   }
 
   .bottom {
-    margin: 10px 50px;
+    margin: 1vh 5vh;
   }
 
   .weather {
-    width: 400px;
-    margin-top: 40px;
+    width: 90%;
+    margin-top: 4vh;
   }
 
   .bottom-forecast {
     flex-direction: column;
-    width:50%;
+    width:60%;
     align-items:stretch;
     margin: auto;
   }
@@ -214,16 +215,16 @@ hr {
   }
 
   .parameter-label {
-    font-size: 12px;
+    font-size: 1.3vh;
   }
 
   .parameter-value {
-    font-size: 12px;
+    font-size: 1.3vh;
   }
 
   .forecast-icon {
     margin-left: 10%;
-    width: 50px;
+    width: 5vh;
   }
 
   .weekday div {
@@ -232,20 +233,20 @@ hr {
   }
 
   .weekday-label {
-    font-size: 12px;
-    margin: 5px;
+    font-size: 1.3vh;
+    margin: 0.5vh;
   }
 
   .weekday-date {
-    font-size: 18px;
-    margin: 5px;
+    font-size: 2vh;
+    margin: 0.5vh;
   }
 
   .weekday-min-max-temp {
-    font-size: 15px;
+    font-size: 1.6vh;
   }
 
   .weekday-description {
-    font-size: 15px;
+    font-size: 1.5vh;
   }
 }
