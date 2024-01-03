@@ -6,7 +6,7 @@
 }
 
 .logo {
-  width: 50%;
+  width: 50vh;
   margin: 1vh 1vh;
 }
 
@@ -172,12 +172,16 @@ hr {
   }
 
   .logo {
-    width: 100%;
-    margin:1vh auto;
+    display: block;
+    width: 40vh;
+    margin:2vh auto;
+  }
+  h2{
+    margin:4vh;
   }
 
   p {
-    font-size: 1.2vh;
+    font-size: 1.5vh;
   }
 
   .city {
