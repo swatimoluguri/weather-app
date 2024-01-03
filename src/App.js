@@ -1,11 +1,10 @@
 import './App.css';
-import Search from './components/search/Search';
-import Weather from './components/weather/Weather';
-import Forecast from './components/forecast/forecast';
+import Search from './components/Search';
+import Weather from './components/Weather';
+import Forecast from './components/Forecast';
 import { WEATHER_API_URL, FORECAST_API_URL, WEATHER_API_KEY } from './components/api';
 import { useState, useEffect } from 'react';
 import Logo from './logo.png';
-import Footer from './components/Footer';
 
 
 function App() {
@@ -105,11 +104,11 @@ function App() {
 
   return (
     <div className="container">
-      <img src={Logo} alt="logo" />
+      <img className='logo' src={Logo} alt="logo" />
+      <p>Real-time weather updates and a 5-day forecast for any city in India.</p>
       <Search onSearchChange={handleOnsearchChange} />
       {weather && <Weather data={weather} />}
       {forecast && <Forecast data={forecast} />}
-      <Footer/>
     </div>
   );
 }

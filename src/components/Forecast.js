@@ -2,7 +2,7 @@ import Accordion from '@mui/material/Accordion';
 import AccordionSummary from '@mui/material/AccordionSummary';
 import AccordionDetails from '@mui/material/AccordionDetails';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
-import "./forecast.css";
+import "../App.css";
 
 const WeekDays = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
 const Forecast = ({ data }) => {
@@ -28,7 +28,7 @@ const Forecast = ({ data }) => {
                         </div>
                     </AccordionSummary>
                     <AccordionDetails>
-                        <div className="bottom">
+                        <div className="bottom-forecast">
                             <div>
                             <div className="parameter-row">
                                     <span className="parameter-label">Forecast</span>
