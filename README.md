@@ -6,9 +6,9 @@ Weather and forecast app for all cities of India using React JS.
 ![image](https://github.com/swatimoluguri/weather-app/assets/149689000/2528ccd3-ff70-4a89-92bb-7807f685b9d3)
 ![image](https://github.com/swatimoluguri/weather-app/assets/149689000/07195b1d-c9d5-4e6c-8d7b-d1f3fb7414b9)
 
-Used APIs:
-Cities (added parameters to restrict and sort cities) - https://rapidapi.com/wirefreethought/api/geodb-cities/
-Weather and Forecast - https://openweathermap.org/ 
+Used APIs:<br>
+Cities (added parameters to restrict and sort cities) - https://rapidapi.com/wirefreethought/api/geodb-cities/<br>
+Weather and Forecast - https://openweathermap.org/ <br>
 
 
 
