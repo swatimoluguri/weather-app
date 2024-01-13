@@ -1,4 +1,4 @@
-Weather and forecast app for all citis of India using React JS.
+Weather and forecast app for all cities of India using React JS.
 
 🚀🚀 Click [here](https://indian-weather-clock.netlify.app/) to check out live demo. 🚀🚀
 
